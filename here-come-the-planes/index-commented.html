@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<!-- this tells the browser to read the code in html language -->
+<html>
+<!-- this sets the code to html language, it is also the container for all other html elements-->
+
+<head>
+  <!-- the head tag is a metadata tag that sets the section of the webpage to work in -->
+
+  <meta name="viewport" content="width=device-width,initial-scale = 1">
+  <!-- the meta tag is used for setting the "viewport". the meta viewport element is
+a tag that gives a set of directions to the browser for how to load the website -->
+
+  <!-- the width=device-width is a way to ensure that the browser's width matches up with
+whatever device it is working with (so that it can also work on phones) -->
+
+  <!-- the initial scale  = 1 sets the amount of zoom the web page has when it is first loaded -->
+
+  <title>Fiona_here_come_the_planes</title>
+  <!-- this is the title of the webpage. it will appear in the tab as the website name in the
+chrome browser -->
+  <style>
+    /* this is the style tag. this indicates that this is a section where css language code will
+  be written and loaded */
+
+    * {
+      box-sizing: content-box;
+      /* this sizes the box that I put my div class in. it is a css element that
+      controlls the padding and placement of a border box */
+    }
+
+    /* website where I learned how to make a fullscreen vid: https://www.w3schools.com/howto/howto_css_fullscreen_video.asp */
+    #myVideo {
+      /* this is a video element. it is where I am able to adjust the placement
+      of the video on the screen */
+      position: fixed;
+      /* this is a fixed position meaning that the video will not move if someone were to
+      scroll on the website. it is fixed meaning that it is relative to the website and will
+      shrink and stretch accordingly to the resolution*/
+      right: 0;
+      /* this ensures the placement of my video starts at the 0 x coordinate */
+      bottom: 0;
+      /* this ensures the placement of my video starts at the 0 y coordinate */
+      min-width: 100%;
+      /* this ensres that the minimum width of my video is 100% so it spans the entire
+      screen. */
+      min-height: 100%;
+      /* this ensures that the minimum height of my video is 100% so it spans the
+      entire screen */
+    }
+
+    .content {
+      /* this is my content class that I created a div for in the html section. this
+      allows me to set a consistant style for the div class */
+      position: absolute;
+      /* this is another position css element which is absolute meaning that even if
+      the browser changes, the position will remain the same */
+      background: rgba(0, 0, 0, 0.25);
+      /* this is the background color which is set in rgba so I can set the alpha to slightly
+      transparent on my content box */
+      color: white;
+      /* this is the main color for my font before it is hovered over. */
+      width: 100%;
+      /* this is the width of my content box which is set to 100% so it spans most of the screen*/
+      height: 100%;
+      /* this is the height of my content box which is set to 100% so it spans most of the screen */
+    }
+
+    body {
+      /* this is the body tag. it is how I set the parameters for the text located in the
+      body section, these being the h1 and h2 tags */
+      background-color: #ffb366;
+      /* this is the background color I set for the background of the text in the body element */
+      color: black;
+      /* this is the color I used for the body text */
+      text-align: center;
+      /* the text-align action moves the text elements in a certain direction. here
+      I used center so that all my text would be moved to the middle of the page */
+      font-size: 40px;
+      /* this is the font-size. here I used 40 px which means it is the font size of
+      40 pixels on the webpage */
+    }
+
+    a {
+      /* this tag is for a hyperlink. here I am setting up the style of how the
+      text will appear on the page by using css */
+      color: white;
+      /* the color of the font will be white before it is hovered over. */
+      text-align: center;
+      /* the text align is again centered so that it appears in the middle of the page */
+      font-size: 40px;
+      /* the text size is 40 pixels tall */
+    }
+
+    a:hover {
+      /* this is the hyperlink tag with a hover action added onto it. this means that
+      the text will change in some way when the user moves their mouse cursor over it */
+      color: red;
+      /* when the text is hovered over, the color is set to red so it will turn bright red */
+      text-transform: capitalize;
+      /* when the text is hovered over, the front letter of each word will capitalize from a to A */
+      text-align: center;
+      /* the text is aligned to the center so that it is moved to the center */
+      font-size: 100px;
+      /* the text size will change to 100 px when it is hovered over */
+      text-shadow: darkred 3px 3px;
+      /* the text shadow is set to dark red so that it gives a menacing look when it rolled over */
+    }
+
+    h2:hover {
+      /* the h2 hover tag alters the h2 element when it is rolled over by a mouse cursor */
+      color: green;
+      /* the color is set to green when the text is rolled over */
+      font-size: 75px;
+      /* the font size increases to 75px when rolled over */
+      text-align: center;
+      /* the text align moves text to the center of the screen */
+      visibility: 100;
+      /* the visibillity ensures that the text element is at full visibility on the screen */
+      text-shadow: black 3px 3px;
+      /* the text shadow creates a shadow behind the main text and is scaled by the 3px by 3px to
+      adjust the angle */
+    }
+
+    h2:hover {
+      /* the h2 hover tag alters the h2 element when it is rolled over by a mouse cursor */
+      color: green;
+      /* the text-color is turned green when it is rolled over by the mouse cursor */
+      font-size: 75px;
+      /* the font size increases to 75 px when it is rolled over by the mouse cursor */
+      text-align: center;
+      /* the text is moved to the center of the webpage with the text-align tag */
+      visibility: 100;
+      /* the visibility parameter is set to 100 which means that the element will be fully visible */
+      text-shadow: black 3px 3px;
+      /* the text-shadow creates a shadow text that is placed behind the main text to add depth. this
+      one is set to black. */
+    }
+
+    h1:hover {
+      /* this is the h1 hover tag which changes the appearance of the h1 tag when it is rolled over */
+      transform: rotate(180deg);
+      /* this is the transform property which moves the html element.
+      I modified the transform parameter by adding the rotate action which I set
+      to 180 degrees, rotating the object upside down  */
+      text-shadow: black 3px 3px;
+      /* this is a text shadow. it is another color that acts as a shadow underneath
+      text elements */
+      color: orange;
+      /* this is the color I selected for the h1 tag to show when rollled over. now the
+      text will rotate 180 degrees and turn orange when rolled over */
+    }
+  </style>
+  <!-- closing the style tag means that the code is switching back to html style -->
+</head>
+
+<body>
+  <!-- this is a body tag which links into the css and fills in the skeleton
+and files that need to be inputted into the content box -->
+  <video autoplay muted loop id="myVideo">
+    <!-- this autoplays the video when the link is clicked,the muted loop also keeps it with no audio playing-->
+    <!-- the id="myVideo" sets the media element to a video element -->
+    <source src="street.mp4">
+    <!-- this is the source for the street video. the street video is a .mp4 file-->
+  </video>
+
+  <div class="content">
+    <!-- this is the div class where I store the text that will be overlaid on top of the video.
+  it creates a container that the text will be stored in that maintains the stylistic elements
+as well as boxes off anything contaned inside.-->
+    <h1>You can come as you are</h1>
+    <!-- this is the h1 tag which is classified as the main heading in html.
+    I use it as the biggest piece of text on my page -->
+    <h2>But pay as you go</h2>
+    <!-- this is the h2 tag which is classified as the subheading. I use this as my second
+  largest piece of text -->
+    <h2>...pay as you go</h2>
+    <!-- this is also an h2 tag. I used another h2 tag the same size to emphazise the repition of the lyric -->
+    <a href="https://ireneel.github.io/web-nyu-idm/here-come-the-planes/" <div>
+      ah ah ah ah ah ah...
+      <!-- this is the link to Irene's page so that it can make a webring. I used the
+    href element so that my browser knows that the text "ah ah ah" is a link that can be clicked on
+  and locate to a different webpage -->
+  </div>
+  </a>
+  </div>
+</body>
+
+</html>
+<!-- these are all the closing tags to the html and div elements. if these tags were not closed,
+the code would give an error message -->
