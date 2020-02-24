@@ -9,38 +9,70 @@ body {
 *, *:before, *:after {
   box-sizing: inherit;
 }
-/* THE END of default helpful basic CSS to include. EDIT the stuff BELOW this line*/
 
-@font-face {
-  font-family: 'Montserrat Subrayada', sans-serif;
-  src: url('./fonts/VioletSans-Regular.woff') format('woff');
-  font-weight: normal;
-  font-style: normal; */
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+
+<!-- WEBSITE FOR HOW TO CHANGE CURSOR: https://css-tricks.com/almanac/properties/c/cursor/-->
+
+.custom {
+  cursor: url(C:\Users\fiona\Documents\intro_to_web\git\web-nyu-idm\css-diner\images\pacman.png), alias;
 }
 
-.pinky{
+.heading{
   background-color: black;
-  
-
-}
-<div class = "pinky">
-/* This is a div class from level 2. It indicates that there is a type selector present,
-that type selector being the div element  */
-  <ghost>
-  <pacman>
-
-    <pacman />
-  </ghost>
-  </div>
-
-.my-fun-class {
-  width: 40%;
-  border: 2px solid forestgreen;
-  display: block;
-  margin: auto;
+  color:yellow;
+  padding:40px;
+  text-align: center;
 }
 
-img {
-  width: 40%;
-  padding: 2em;
+/* This is my code based on level 6. It is a class selector that I use to color my ordered list at the bottom. This creates a class that can customise attributes in my html code, but is not a unique id unlike a descenendant selector. */
+.pixelbyte{
+  background-color: yellow;
+  font-family: 'Press Start 2P', cursive;
+  color:black;
+  padding:40px;
+  text-align: left;
+}
+
+/* This is my code based on level 5. It is an id selector which means it selects a unique attribute in my html class. */
+#blinky{
+  background-color: black;
+  font-family: 'Press Start 2P', cursive;
+  color: red;
+  padding:10px;
+  text-align: center;
+
+}
+
+#pinky{
+  background-color: black;
+  font-family: 'Press Start 2P', cursive;
+  color: pink;
+  padding:10px;
+  text-align: center;
+
+}
+
+#inky{
+  background-color: black;
+  font-family: 'Press Start 2P', cursive;
+  color: lightblue;
+  padding:10px;
+  text-align: center;
+
+}
+
+#clyde{
+  background-color: black;
+  font-family: 'Press Start 2P', cursive;
+  color: orange;
+  padding:10px;
+  text-align: center;
+
+}
+
+/* This is my code based on level 10. It is a universal selector with an asterisk. This means that
+the attribute of the font family will be applied to all elements that have text. */
+*{
+  font-family: 'Press Start 2P', cursive;
 }
