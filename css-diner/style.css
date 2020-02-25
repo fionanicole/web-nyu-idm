@@ -80,6 +80,12 @@ h3:nth-child(5){
   color:darkred;
 }
 
+/* This is a last-child selector from level 24. It selects the last kind of element specified within each div. I set mine to select all of the last h4 elements to appear in their divs and change them to purple text. */
+h4:last-of-type{
+  color: purple;
+  font-size: 50px;
+}
+
 
 
 /* This is my code based on level 5. It is an id selector which means it selects a unique attribute in my html class. */
