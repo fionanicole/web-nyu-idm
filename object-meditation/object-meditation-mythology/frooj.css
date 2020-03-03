@@ -1,0 +1,25 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  color:green;
+  background-color: lightgreen;
+}
+
+div{
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
+  border-color: green;
+  border-width: thick;
+}
+
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+}
