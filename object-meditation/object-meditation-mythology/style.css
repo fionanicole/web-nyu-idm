@@ -12,11 +12,6 @@ body {
 .content {
   position: absolute;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  justify-content: space-around;
-  justify-content: center;
-  align-items: center;
   background: rgba(0, 0, 0, 0.25);
   font-size: 100px;
   color: white;
@@ -43,12 +38,19 @@ body {
   transform: translate(-500px,-500px);
 }
 
-button {
-  border-style: groove;
-  color: black;
-  border-color: black;
-  border-width: medium;
-  margin: 1em;
+.styleporch{
+  display:flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height:400px;
+  width:400px;
+
+}
+
+.movefrog{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 @media only screen and (max-width: 600px) {

@@ -22,7 +22,7 @@ body {
   height:400px;
   width:400px;
   background-color:rgba(255, 255, 255, 0.5);
-  padding:20px;
+  margin:15px;
   border-color: black;
   border-width: thick;
   text-align: center;
@@ -35,7 +35,7 @@ body {
   align-items: center;
   justify-content: space-around;
   justify-content: space-between;
-  padding:100px;
+  margin:135px;
 }
 
 #myVideo {
