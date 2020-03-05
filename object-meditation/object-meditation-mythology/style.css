@@ -32,11 +32,15 @@ body {
   min-height: 100%;
 }
 
-@font-face {
-  font-family: 'violet';
-  src: url('./fonts/VioletSans-Regular.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
+.square{
+  height:400px;
+  width:400px;
+  background-color:rgba(255, 255, 255, 0.5);
+  padding:20px;
+  border-color: black;
+  border-width: thick;
+  text-align: center;
+  transform: translate(-500px,-500px);
 }
 
 button {
