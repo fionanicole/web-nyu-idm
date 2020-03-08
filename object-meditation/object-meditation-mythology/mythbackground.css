@@ -1,4 +1,7 @@
 html,
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Niconne&display=swap');
+
 body {
   margin: 0;
   padding: 0;
@@ -8,44 +11,67 @@ body {
   box-sizing: content-box;
 }
 
+.pinksunset {
+  background-image: url("images/pinksunset.jpg");
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+.mistletoe {
+  background-image: url("images/mistletoe.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.gallery {
+  background-image: url("images/frenchlouvre.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.mountains {
+  background-image: url("images/greekmountains.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .content {
-  position:fixed;
-  background: rgba(255,255,255,0.5);
-  color: white;
-  width: 600px;
+  position: fixed;
+  background: rgba(255, 255, 255, 0.8);
+  color: black;
+  font-family: 'Abril Fatface', cursive;
+  width: 550px;
   height: 700px;
   transform: translate(25px);
-  padding:20px;
+  padding: 20px;
 }
 
-.square{
-  height:740px;
-  width:550px;
+.square {
+  height: 740px;
+  width: 500px;
   background-color: white;
-  transform: translate(750px,-630px);
+  transform: translate(800px, 20px);
 }
 
+/* https://www.w3schools.com/cssref/tryit.asp?filename=trycss_overflow */
 .container {
-  position: relative;
+  position:fixed;
   text-align: center;
   color: white;
-  transform: translate(40px,75px);
+  transform: translate(40px, 75px);
 }
 
-@font-face {
-  font-family: 'violet';
-  src: url('./fonts/VioletSans-Regular.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
+div.scroll {
+  color:black;
+  font-family: 'Niconne', cursive;
+  font-size: 22px;
+  overflow: scroll;
+  width: 550px;
+  height: 648px;
+  transform: translate(0px, 20px);
+  padding:5px;
+  margin:4px;
 }
-
-/* https://www.w3schools.com/cssref/tryit.asp?filename=trycss3_gradient-radial */
-#goldgradient {
-  height: 500px;
-  width: 500px;
-  background-image: radial-gradient(gold,black);
-}
-
 
 @media only screen and (max-width: 600px) {
   body {
