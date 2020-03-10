@@ -9,6 +9,7 @@ body {
   box-sizing: content-box;
 }
 
+/* container that is overlaid on top of the background vid */
 .content {
   position: absolute;
   display: flex;
@@ -17,6 +18,7 @@ body {
   color: white;
 }
 
+/* video container */
 #myVideo {
   position: fixed;
   right: 0;
@@ -25,6 +27,7 @@ body {
   min-height: 100%;
 }
 
+/* set up of the grey person */
 #greycolored{
   display:flex;
   justify-content: flex-start;
@@ -33,6 +36,8 @@ body {
   height:765px;
 }
 
+
+/* positioning of the frog link */
 #movethefrog{
   display: flex;
   height:35px;
@@ -40,17 +45,42 @@ body {
   transform:translate(-343px,220px);
 }
 
-.square{
-  height:400px;
-  width:400px;
-  background-color:rgba(255, 255, 255, 0.5);
-  padding:20px;
-  border-color: black;
-  border-width: thick;
-  text-align: center;
-  transform: translate(-500px,-500px);
+/* Keyframes for Red Transition-------------------------------------------------------------------------
+----------------------------------------------------------------------------- */
+.hideOverlayRed{
+  display:none;
+  height:100px;
+  width:100px;
+  background-color: rgba(255, 0, 0, 0.5);
+}
+.showOverlayRed {
+  display: flex;
+  height:100px;
+  width:100px;
+  background-color: rgba(255, 0, 0, 0.5);
+  animation-duration: 3s;
+  animation-name: slidein;
 }
 
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  75% {
+    font-size: 300%;
+    margin-left: 25%;
+    width: 150%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+/* mobile responsive section */
 @media only screen and (max-width: 600px) {
   body {
     background-color: lightblue;
