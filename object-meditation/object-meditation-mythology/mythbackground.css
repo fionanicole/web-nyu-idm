@@ -27,6 +27,7 @@ body {
   background-image: url("images/frenchlouvre.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  filter:none;
 }
 
 .mountains {
@@ -47,6 +48,8 @@ body {
 }
 
 .square {
+  display: flex;
+  justify-content: flex-end;
   height: 740px;
   width: 500px;
   background-color: white;

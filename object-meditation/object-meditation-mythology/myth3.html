@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css?family=Niconne&display=swap" rel="stylesheet">
   <script language="JavaScript" src="myth3script.js"></script>
   <title>Pygmalion&Galatea</title>
+
 </head>
 
 <body class="gallery">
@@ -48,32 +49,45 @@
     <image src="images/pygmalion-galatea.jpg" width="500px" height="740px"> </image>
   </div>
 
+  <div>
+    <button id='but_1' onclick="javascript: (
+     function invertColor() {
+       // the css we are going to inject
+       var css = 'html {-webkit-filter: invert(100%);' +
+         '-moz-filter: invert(100%);' +
+         '-o-filter: invert(100%);' +
+         '-ms-filter: invert(100%); }',
+
+         head = document.getElementsByTagName('head')[0],
+         style = document.createElement('style');
+
+       // a hack, so you can "invert back" clicking the bookmarklet again
+       if (!window.counter) {
+         window.counter = 1;
+       } else {
+         window.counter++;
+         if (window.counter % 2 == 0) {
+           var css = 'html {-webkit-filter: invert(0%); -moz-filter:    invert(0%); -o-filter: invert(0%); -ms-filter: invert(0%); }'
+         }
+       };
+
+       style.type = 'text/css';
+       if (style.styleSheet) {
+         style.styleSheet.cssText = css;
+       } else {
+         style.appendChild(document.createTextNode(css));
+       }
+
+       //injecting the css to the head
+       head.appendChild(style);
+     }());
+      ">Invert</button>
+  </div>
+
 <!-- SOURCED ENTIRELY FROM: // https://stackoverflow.com/questions/4766201/javascript-invert-color-on-all-elements-of-a-page
 // http://jsfiddle.net/nikita_turing/jVKw6/3/
  -->
-  <button id='but_1' onclick="javascript: (
-  function () {
-      var css = 'html {-webkit-filter: invert(100%);' +
-          '-moz-filter: invert(100%);' +
-          '-o-filter: invert(100%);' +
-          '-ms-filter: invert(100%); }',
-      head = document.getElementsByTagName('head')[0],
-      style = document.createElement('style');
 
-  if (!window.counter) { window.counter = 1;} else  { window.counter ++;
-  if (window.counter % 2 == 0) { var css ='html {-webkit-filter: invert(0%); -moz-filter: invert(0%); -o-filter: invert(0%); -ms-filter: invert(0%); }'}
-   };
-
-  style.type = 'text/css';
-  if (style.styleSheet){
-    style.styleSheet.cssText = css;
-  } else {
-    style.appendChild(document.createTextNode(css));
-  }
-
-  head.appendChild(style);
-   }());
-  ">LETS CHANGE IT UP</button>
 </body>
 
 </html>
