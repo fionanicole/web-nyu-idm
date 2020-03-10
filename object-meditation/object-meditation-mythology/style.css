@@ -47,37 +47,48 @@ body {
 
 /* Keyframes for Red Transition-------------------------------------------------------------------------
 ----------------------------------------------------------------------------- */
-.hideOverlayRed{
-  display:none;
-  height:100px;
-  width:100px;
-  background-color: rgba(255, 0, 0, 0.5);
-}
-.showOverlayRed {
-  display: flex;
-  height:100px;
-  width:100px;
-  background-color: rgba(255, 0, 0, 0.5);
-  animation-duration: 3s;
+
+
+.overlayRed {
+  display: none;
+  height:765px;
+  width:2000px;
+  background-color: rgba(255, 0, 0, 0.15);
+  animation-duration: 5s;
   animation-name: slidein;
+  transform: translate(-1200px,-100px);
 }
 
 @keyframes slidein {
   from {
     margin-left: 100%;
-    width: 300%;
+    width: 100%;
   }
 
-  75% {
-    font-size: 300%;
-    margin-left: 25%;
-    width: 150%;
+  50% {
+    margin-left: 50%;
+    width: 100%;
   }
 
   to {
     margin-left: 0%;
     width: 100%;
   }
+}
+
+/* https://www.w3schools.com/css/tryit.asp?filename=trycss_display_js */
+#panel, .buttonDisplay {
+  font-size: 16px;
+  padding: 10px;
+  text-align: center;
+  background-color: #4CAF50;
+  color: white;
+  border: solid 1px #a6d8a8;
+  margin: auto;
+}
+
+#panel {
+  display: none;
 }
 
 /* mobile responsive section */
