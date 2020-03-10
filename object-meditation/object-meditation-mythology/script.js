@@ -1,7 +1,3 @@
-$(document).ready(function() {
-
-  $("#show").click(function() {
-    $(this).attr("src", "images/porchpiccolor.png");
-  });
-
-});
+function myFunction() {
+  document.getElementById("greycolored").src = "images/porchpiccolor.png";
+}

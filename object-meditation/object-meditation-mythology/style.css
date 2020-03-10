@@ -27,6 +27,21 @@ body {
   min-height: 100%;
 }
 
+#greycolored{
+  display:flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width:1000px;
+  height:765px;
+}
+
+.movefrog{
+  display: flex;
+  height:5px;
+  width:5px;
+  transform:translate(-680px,400px);
+}
+
 .square{
   height:400px;
   width:400px;
@@ -36,17 +51,6 @@ body {
   border-width: thick;
   text-align: center;
   transform: translate(-500px,-500px);
-}
-
-.styleporch{
-  display:flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-}
-
-.movefrog{
-  display: flex;
-  transform:translate(-680px,400px);
 }
 
 @media only screen and (max-width: 600px) {
