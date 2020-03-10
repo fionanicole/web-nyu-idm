@@ -1,0 +1,3 @@
+function invertImages(){
+document.getElementById("gallery").style.filter="invert(100%)";
+}
