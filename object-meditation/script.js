@@ -10,10 +10,10 @@
 // });
 //
 
-function colorize() {
-  document.getElementById("greycolored").src = "images/porchpiccolor.png";
-  setTimeout(delay(), 5000);
-}
+// function colorize() {
+//   document.getElementById("greycolored").src = "images/porchpiccolor.png";
+//   setTimeout(delay(), 5000);
+// }
 //
 // function delay ("inspired-homepage.html") {
 //     setTimeout( function() { window.location = "inspired-homepage.html"}, 5000);
