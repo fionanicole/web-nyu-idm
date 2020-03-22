@@ -16,10 +16,14 @@ function rainBackground(){
   }
 }
 
+// https://stackoverflow.com/questions/27508025/html-javascript-how-can-i-make-a-button-appear-in-a-function
 function colorize() {
   var x = document.getElementById("greycolored").src = "images/porchpiccolor.png";
+  createGateway();
+}
 
-  if(x.src="images/porchpiccolor.png"){
-    document.getElementById("greycolored").display.visibility="visible";
-    }
+function createGateway(){
+  var y = document.getElementById("gatewayButton");
+  y.display="block";
+
 }
