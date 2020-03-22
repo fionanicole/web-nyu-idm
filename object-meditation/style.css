@@ -39,6 +39,7 @@ body {
 /* set up of the grey person */
 #greycolored{
   display:flex;
+  justify-content: flex-start;
   width: 550px;
   height:750px;
 }
@@ -52,46 +53,54 @@ body {
 }
 
 #gardenButton{
-  border: none;
+  border-color:black;
+  border-radius: 8px;
   font-family: 'Abril Fatface', cursive;
   font-size: 14px;
   width:160px;
   height:50px;
-  background-color: lightgreen;
-  color:darkgreen;
+  background-color: darkgreen;
+  background-image: image("images/grass.jpg");
+  color:lightgreen;
   visibility: visible;
 }
 
 #rainButton{
-  border: none;
+  border-color:black;
+  border-radius: 8px;
   font-family: 'Abril Fatface', cursive;
   font-size: 14px;
   width:160px;
   height:50px;
   background-color: blue;
-  color:black;
+  background-image: image("images/water.jpg");
+  color:lightblue;
   visibility: visible;
 }
 
 #inspireButton{
-  border: none;
+  border-color:black;
+  border-radius: 8px;
   font-family: 'Abril Fatface', cursive;
   font-size: 14px;
   width:160px;
   height:50px;
   background-color: purple;
-  color:black;
+  background-image: image("images/purplemagic.jpg");
+  color:lavender;
   visibility: visible;
 }
 
 #gatewayButton{
-  border: none;
+  border-color:black;
+  border-radius: 8px;
   font-family: 'Abril Fatface', cursive;
   font-size: 14px;
   display:none;
-  width:1px;
-  height:1px;
+  width:160px;
+  height:50px;
   background-color: lavender;
+  background-image: image("images/puff.jpg");
   color:purple;
 }
 

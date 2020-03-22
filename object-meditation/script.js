@@ -1,29 +1,56 @@
 function gardenBackground() {
   var x = document.getElementById("myVideo");
-  if (x.src="images/rain.mp4") {
-    x.src="images/lavender.mp4";
+  if (x.src = "images/rain.mp4") {
+    x.src = "images/lavender.mp4";
   } else {
-    x.src="images/rain.mp4";
+    x.src = "images/rain.mp4";
   }
 }
 
-function rainBackground(){
+function rainBackground() {
   var x = document.getElementById("myVideo");
-  if (x.src="images/lavender.mp4") {
-    x.src="images/rain.mp4";
+  if (x.src = "images/lavender.mp4"){
+    x.src = "images/rain.mp4";
   } else {
-    x.src="images/lavender.mp4";
+    x.src = "images/lavender.mp4";
   }
 }
 
-// https://stackoverflow.com/questions/27508025/html-javascript-how-can-i-make-a-button-appear-in-a-function
-function colorize() {
-  var x = document.getElementById("greycolored").src = "images/porchpiccolor.png";
+function inspireBackground() {
+  var x = document.getElementById("myVideo");
+  if (x.src = "images/lavender.mp4"){
+    x.src = "images/purpleparticle.mp4";
+  } else {
+    x.src = "images/lavender.mp4";
+  }
+
+  var y = document.getElementById("greycolored");
+  y.src = "images/porchpiccolor.png";
+  var z = document.getElementById("inspireButton");
+  z.innerHTML = "Inspire Again!";
+  z.color = "pink";
+  z.fontSize = "18px";
+
   createGateway();
 }
 
-function createGateway(){
-  var y = document.getElementById("gatewayButton");
-  y.display="block";
+// function colorize() {
+//   var x = document.getElementById("greycolored");
+//   x.src = "images/porchpiccolor.png";
+//   var y= document.getElementById("inspireButton");
+//   y.innerHTML="Inspire Again!";
+//   y.color="pink";
+//   y.fontSize="18px";
+//
+//   createGateway();
+// }
 
+// https://www.w3schools.com/howto/howto_js_toggle_hide_show.asp
+function createGateway() {
+  var x = document.getElementById("gatewayButton");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
 }
