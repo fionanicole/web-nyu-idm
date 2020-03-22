@@ -5,9 +5,9 @@ body {
   background-color: black;
 }
 
-* {
+/* * {
   box-sizing: content-box;
-}
+} */
 
 /* container that is overlaid on top of the background vid */
 .content {
@@ -38,10 +38,8 @@ body {
 /* set up of the grey person */
 #greycolored{
   display:flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  width:1000px;
-  height:765px;
+  width: 550px;
+  height:750px;
 }
 
 /* positioning of the frog link */
@@ -49,7 +47,40 @@ body {
   display: flex;
   height:35px;
   width:35px;
-  transform:translate(-40%,40%);
+  transform:translate(-330%,650%);
+}
+
+#gardenButton{
+  width:160px;
+  height:50px;
+  background-color: lightgreen;
+  color:darkgreen;
+  visibility: visible;
+}
+
+#rainButton{
+  width:160px;
+  height:50px;
+  background-color: blue;
+  color:black;
+  visibility: visible;
+}
+
+#inspireButton{
+  width:160px;
+  height:50px;
+  background-color: purple;
+  color:black;
+  visibility: visible;
+}
+
+#gatewayButton{
+  /* display: none; */
+  width:160px;
+  height:50px;
+  background-color: lavender;
+  color:purple;
+  visibility: hidden;
 }
 
 /* mobile responsive section */
