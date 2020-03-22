@@ -2,10 +2,6 @@ function colorize() {
   document.getElementById("greycolored").src = "images/porchpiccolor.png";
 }
 
-function changeBackground() {
-  document.getElementById("myVideo").src = "images/lavender.mp4";
-}
-
 // SOURCE: https://stackoverflow.com/questions/9877263/time-delayed-redirect
 
 $('#shiftToPage').click (function(event) {
@@ -16,3 +12,22 @@ $('#shiftToPage').click (function(event) {
     }, 10000); //will call the function after 2 secs.
 
 });
+
+
+function gardenBackground() {
+  var x = document.getElementById("myVideo");
+  if (x.src="images/rain.mp4") {
+    x.src="images/lavender.mp4";
+  } else {
+    x.src="images/rain.mp4";
+  }
+}
+
+function rainBackground(){
+  var x = document.getElementById("myVideo");
+  if (x.src="images/lavender.mp4") {
+    x.src="images/rain.mp4";
+  } else {
+    x.src="images/lavender.mp4";
+  }
+}
