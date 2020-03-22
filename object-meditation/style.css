@@ -52,6 +52,12 @@ body {
   transform:translate(-330%,650%);
 }
 
+.square {
+  height: 700px;
+  width: 100px;
+  background-color:rgba(0,0,0,0);
+}
+
 #gardenButton{
   border-color:black;
   border-radius: 8px;
