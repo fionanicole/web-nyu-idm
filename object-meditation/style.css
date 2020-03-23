@@ -16,14 +16,6 @@ body {
   color: white;
 }
 
-/* shift the link to another page, but working on delaying it in JavaScript */
-#shiftToPage {
-  color: black;
-  background color: yellow;
-  width: 50px;
-  height: 50px;
-}
-
 /* video container */
 #myVideo {
   position: fixed;
@@ -112,73 +104,63 @@ body {
 /* Sources for Media widths: https://gist.github.com/needim/d15fdc2ac133d8078f7c */
 
 /* Galaxy S5 portrait */
-@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) {
+@media screen and (min-device-width: 360px) and (max-device-width: 361px) and (min-device-height: 640px) and (max-device-height: 641px) and (-webkit-device-pixel-ratio: 3) {
+  .content {
+    position:absolute;
+    display: flex;
+    z-index: 1;
+  }
 
-.content {
-  position: fixed;
-  left: 0px;
-  top: 0px;
-  z-index: 2;
-}
-/* video container */
-#myVideo {
-  position:fixed;
-  left: 0px;
-  top: 0px;
-  z-index: -2;
-  width:400%;
-  height:100%;
-  transform: translate(-50%,0%);
-}
+  #myVideo {
+    position:absolute;
+    display: flex;
+    top:0px;
+    left:0px;
+    width:600px;
+    height:1200px;
+    z-index: -1;
+    transform:translate(-50%,-40%);
 
-/* set up of the grey person */
-#greycolored {
-  position:fixed;
-  left:0px;
-  top:0px;
-  z-index: 1px;
-  width: 300px;
-  height: 500px;
-}
+  }
 
-/* positioning of the frog link */
-#movethefrog {
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  z-index: 2;
-}
+  #greycolored {
+    position:absolute;
+    display: flex;
+    width:120px;
+    height:220px;
+    z-index: 2;
+    transform:translate(-8%,0);
+  }
 
-.square {
-  height: 1px;
-  width: 1px;
-}
+  #movethefrog {
 
-#gardenButton {
-  transform:translate(0,1050%);
-}
+  }
 
-#rainButton {
-transform:translate(0,1050%);
-}
+  .square {
+    display:none;
+  }
 
-#inspireButton {
-transform:translate(-200%,1150%);
-}
+  #gardenButton {
 
-#gatewayButton {
-transform:translate(-200%,1150%);
+  }
+
+  #rainButton {
+
+  }
+
+  #inspireButton {
+
+  }
+
+  #gatewayButton {
+
 }
 }
 
-/* iPhone X in landscape */
-@media only screen and (min-device-width : 375px) and (max-device-width : 812px) and (-webkit-device-pixel-ratio : 3) and (orientation : landscape) {}
+/* iPhone X in portrait & landscape */
+@media only screen and (min-device-width : 375px) and (max-device-width : 812px) and (-webkit-device-pixel-ratio : 3) {
 
-/* iPhone X in portrait */
-@media only screen and (min-device-width : 375px) and (max-device-width : 812px) and (-webkit-device-pixel-ratio : 3) and (orientation : portrait) {}
+}
 
-/* iPad in landscape */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {}
-
-/* iPad in portrait */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {}
+/* iPad in portrait & landscape */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {}
