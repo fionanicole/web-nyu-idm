@@ -1,14 +1,11 @@
 html,
 @import url('https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap');
+
 body {
   margin: 0;
   padding: 0;
   background-color: black;
 }
-
-/* * {
-  box-sizing: content-box;
-} */
 
 /* container that is overlaid on top of the background vid */
 .content {
@@ -20,9 +17,9 @@ body {
 }
 
 /* shift the link to another page, but working on delaying it in JavaScript */
-#shiftToPage{
+#shiftToPage {
   color: black;
-  background color:yellow;
+  background color: yellow;
   width: 50px;
   height: 50px;
 }
@@ -37,109 +34,151 @@ body {
 }
 
 /* set up of the grey person */
-#greycolored{
-  display:flex;
+#greycolored {
+  display: flex;
   justify-content: flex-start;
   width: 550px;
-  height:750px;
+  height: 750px;
 }
 
 /* positioning of the frog link */
-#movethefrog{
-  display: flex;
-  height:35px;
-  width:35px;
-  transform:translate(-330%,650%);
+#movethefrog {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  height: 35px;
+  width: 35px;
+  transform: translate(-330%, 650%);
 }
 
 .square {
   height: 700px;
   width: 100px;
-  background-color:rgba(0,0,0,0);
+  background-color: rgba(0, 0, 0, 0);
 }
 
-#gardenButton{
-  border-color:black;
+#gardenButton {
+  border-color: black;
   border-radius: 8px;
   font-family: 'Abril Fatface', cursive;
   font-size: 14px;
-  width:160px;
-  height:50px;
+  width: 160px;
+  height: 50px;
   background-color: darkgreen;
   background-image: image("images/grass.jpg");
-  color:lightgreen;
+  color: lightgreen;
   visibility: visible;
 }
 
-#rainButton{
-  border-color:black;
+#rainButton {
+  border-color: black;
   border-radius: 8px;
   font-family: 'Abril Fatface', cursive;
   font-size: 14px;
-  width:160px;
-  height:50px;
+  width: 160px;
+  height: 50px;
   background-color: blue;
   background-image: image("images/water.jpg");
-  color:lightblue;
+  color: lightblue;
   visibility: visible;
 }
 
-#inspireButton{
-  border-color:black;
+#inspireButton {
+  border-color: black;
   border-radius: 8px;
   font-family: 'Abril Fatface', cursive;
   font-size: 14px;
-  width:160px;
-  height:50px;
+  width: 160px;
+  height: 50px;
   background-color: purple;
   background-image: image("images/purplemagic.jpg");
-  color:lavender;
+  color: lavender;
   visibility: visible;
 }
 
-#gatewayButton{
-  border-color:black;
+#gatewayButton {
+  border-color: black;
   border-radius: 8px;
   font-family: 'Abril Fatface', cursive;
   font-size: 14px;
-  display:none;
-  width:160px;
-  height:50px;
+  display: none;
+  width: 160px;
+  height: 50px;
   background-color: lavender;
   background-image: image("images/puff.jpg");
-  color:purple;
+  color: purple;
 }
 
 /* Sources for Media widths: https://gist.github.com/needim/d15fdc2ac133d8078f7c */
 
-/* iPhone X in portrait & landscape */
-@media only screen
-and (min-device-width : 375px)
-and (max-device-width : 812px)
-and (-webkit-device-pixel-ratio : 3) {
+/* Galaxy S5 portrait */
+@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) {
 
-  body {
-
-  }
+.content {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  z-index: 2;
+}
+/* video container */
+#myVideo {
+  position:fixed;
+  left: 0px;
+  top: 0px;
+  z-index: -2;
+  width:400%;
+  height:100%;
+  transform: translate(-50%,0%);
 }
 
-/* Galaxy S5 portrait and landscape */
-@media screen
-  and (device-width: 360px)
-  and (device-height: 640px)
-  and (-webkit-device-pixel-ratio: 3) {
-
-    body {
-
-    }
+/* set up of the grey person */
+#greycolored {
+  position:fixed;
+  left:0px;
+  top:0px;
+  z-index: 1px;
+  width: 300px;
+  height: 500px;
 }
 
-/* iPad in portrait & landscape */
-@media only screen
-and (min-device-width : 768px)
-and (max-device-width : 1024px)  {
-
-  body {
-
-  }
+/* positioning of the frog link */
+#movethefrog {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 2;
 }
+
+.square {
+  height: 1px;
+  width: 1px;
+}
+
+#gardenButton {
+  transform:translate(0,1050%);
+}
+
+#rainButton {
+transform:translate(0,1050%);
+}
+
+#inspireButton {
+transform:translate(-200%,1150%);
+}
+
+#gatewayButton {
+transform:translate(-200%,1150%);
+}
+}
+
+/* iPhone X in landscape */
+@media only screen and (min-device-width : 375px) and (max-device-width : 812px) and (-webkit-device-pixel-ratio : 3) and (orientation : landscape) {}
+
+/* iPhone X in portrait */
+@media only screen and (min-device-width : 375px) and (max-device-width : 812px) and (-webkit-device-pixel-ratio : 3) and (orientation : portrait) {}
+
+/* iPad in landscape */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {}
+
+/* iPad in portrait */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {}

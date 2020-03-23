@@ -64,34 +64,54 @@ a{
 
 /* Sources for Media widths: https://gist.github.com/needim/d15fdc2ac133d8078f7c */
 
-/* iPhone X in portrait & landscape */
+/* iPhone X in landscape */
 @media only screen
 and (min-device-width : 375px)
 and (max-device-width : 812px)
-and (-webkit-device-pixel-ratio : 3) {
+and (-webkit-device-pixel-ratio : 3)
+and (orientation : landscape) {
 
-  body {
-
-  }
 }
 
-/* Galaxy S5 portrait and landscape */
+/* iPhone X in portrait */
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 812px)
+and (-webkit-device-pixel-ratio : 3)
+and (orientation : portrait) {
+
+}
+
+/* Galaxy S5 portrait */
 @media screen
   and (device-width: 360px)
   and (device-height: 640px)
-  and (-webkit-device-pixel-ratio: 3) {
+  and (-webkit-device-pixel-ratio: 3)
+  and (orientation: portrait) {
 
-    body {
-
-    }
 }
 
-/* iPad in portrait & landscape */
+/* Galaxy S5 landscape */
+@media screen
+  and (device-width: 360px)
+  and (device-height: 640px)
+  and (-webkit-device-pixel-ratio: 3)
+  and (orientation: landscape) {
+
+}
+
+/* iPad in landscape */
 @media only screen
 and (min-device-width : 768px)
-and (max-device-width : 1024px)  {
+and (max-device-width : 1024px)
+and (orientation : landscape) {
 
-  body {
+}
 
-  }
+/* iPad in portrait */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait) {
+
 }
