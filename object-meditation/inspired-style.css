@@ -62,8 +62,36 @@ a{
   background-color: lightyellow;
 }
 
-@media only screen and (max-width: 600px) {
+/* Sources for Media widths: https://gist.github.com/needim/d15fdc2ac133d8078f7c */
+
+/* iPhone X in portrait & landscape */
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 812px)
+and (-webkit-device-pixel-ratio : 3) {
+
   body {
-    background-color: lightblue;
+
+  }
+}
+
+/* Galaxy S5 portrait and landscape */
+@media screen
+  and (device-width: 360px)
+  and (device-height: 640px)
+  and (-webkit-device-pixel-ratio: 3) {
+
+    body {
+
+    }
+}
+
+/* iPad in portrait & landscape */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)  {
+
+  body {
+
   }
 }
