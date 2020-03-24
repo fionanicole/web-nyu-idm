@@ -81,7 +81,7 @@ function redirectGloriously() {
 
   var timer = setTimeout(function() {
     window.location = 'inspired-homepage.html'
-  }, 7000);
+  }, 5000);
 
   var x = document.getElementById("myVideo");
   if (x.src = "images/rain.mp4") {
