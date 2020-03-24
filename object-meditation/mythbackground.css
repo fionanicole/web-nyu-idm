@@ -84,19 +84,7 @@ body {
 }
 
 /* classes for button elements */
-#paragraphStyle1{
-  color:black;
-  font-family: 'Amiri', serif;
-  font-size: 18px;
-}
-
-#paragraphStyle2{
-  color:black;
-  font-family: 'Amiri', serif;
-  font-size: 18px;
-}
-
-#paragraphStyle3{
+#paragraphStyle{
   color:black;
   font-family: 'Amiri', serif;
   font-size: 18px;
