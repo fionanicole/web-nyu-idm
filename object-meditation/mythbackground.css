@@ -93,56 +93,38 @@ body {
   font-size: 18px;
 }
 
+/* Source:https://www.w3schools.com/css/css_rwd_mediaqueries.asp */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
 /* Sources for Media widths: https://gist.github.com/needim/d15fdc2ac133d8078f7c */
-
-/* iPhone X in landscape */
-@media only screen
-and (min-device-width : 375px)
-and (max-device-width : 812px)
-and (-webkit-device-pixel-ratio : 3)
-and (orientation : landscape) {
-
-}
-
-/* iPhone X in portrait */
-@media only screen
-and (min-device-width : 375px)
-and (max-device-width : 812px)
-and (-webkit-device-pixel-ratio : 3)
-and (orientation : portrait) {
-
-}
-
 /* Galaxy S5 portrait */
-@media screen
-  and (device-width: 360px)
-  and (device-height: 640px)
-  and (-webkit-device-pixel-ratio: 3)
-  and (orientation: portrait) {
-
+@media screen and (min-device-width: 360px) and (max-device-width: 361px) and (min-device-height: 640px) and (max-device-height: 641px) and (-webkit-device-pixel-ratio: 3) {
+  [class*="col-"] {
+    width: 100%;
+  }
 }
 
-/* Galaxy S5 landscape */
-@media screen
-  and (device-width: 360px)
-  and (device-height: 640px)
-  and (-webkit-device-pixel-ratio: 3)
-  and (orientation: landscape) {
-
+/* iPhone X in portrait & landscape */
+@media only screen and (min-device-width : 375px) and (max-device-width : 812px) and (-webkit-device-pixel-ratio : 3) {
+  [class*="col-"] {
+      width: 100%;
+    }
 }
 
-/* iPad in landscape */
-@media only screen
-and (min-device-width : 768px)
-and (max-device-width : 1024px)
-and (orientation : landscape) {
-
-}
-
-/* iPad in portrait */
-@media only screen
-and (min-device-width : 768px)
-and (max-device-width : 1024px)
-and (orientation : portrait) {
-
+/* iPad in portrait & landscape */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+  [class*="col-"] {
+    width: 100%;
+  }
 }

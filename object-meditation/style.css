@@ -7,49 +7,59 @@ body {
   background-color: black;
 }
 
+*{
+  box-sizing: border-box;
+}
+
+video{
+  z-index: -1;
+}
+
 /* container that is overlaid on top of the background vid */
 .content {
-  position: absolute;
-  display: flex;
+  display: block;
   background: rgba(0, 0, 0, 0);
-  font-size: 50px;
-  color: white;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
 }
 
 /* video container */
 #myVideo {
   position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
+  /* top:0;
+  left:0; */
 }
 
 /* set up of the grey person */
 #greycolored {
-  display: flex;
-  justify-content: flex-start;
-  width: 550px;
-  height: 750px;
+  width: 100%;
+  height: 100%;
+  float:left;
+  float: top;
+
 }
 
 /* positioning of the frog link */
 #movethefrog {
-  position: absolute;
-  left: 0px;
-  top: 0px;
+  position:relative;
+  transform:translate(550%,-400%);
+  z-index: 2;
   height: 35px;
   width: 35px;
-  transform: translate(-330%, 650%);
-}
-
-.square {
-  height: 700px;
-  width: 100px;
-  background-color: rgba(0, 0, 0, 0);
 }
 
 #gardenButton {
+  float:left;
+  float: top;
   border-color: black;
   border-radius: 8px;
   font-family: 'Abril Fatface', cursive;
@@ -63,6 +73,8 @@ body {
 }
 
 #rainButton {
+  float:left;
+  float: top;
   border-color: black;
   border-radius: 8px;
   font-family: 'Abril Fatface', cursive;
@@ -76,6 +88,8 @@ body {
 }
 
 #inspireButton {
+  float:left;
+  float: top;
   border-color: black;
   border-radius: 8px;
   font-family: 'Abril Fatface', cursive;
@@ -89,6 +103,8 @@ body {
 }
 
 #gatewayButton {
+  float:left;
+  float: top;
   border-color: black;
   border-radius: 8px;
   font-family: 'Abril Fatface', cursive;
@@ -101,66 +117,27 @@ body {
   color: purple;
 }
 
+/* Source:https://www.w3schools.com/css/css_rwd_mediaqueries.asp */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
 /* Sources for Media widths: https://gist.github.com/needim/d15fdc2ac133d8078f7c */
 
-/* Galaxy S5 portrait */
-@media screen and (min-device-width: 360px) and (max-device-width: 361px) and (min-device-height: 640px) and (max-device-height: 641px) and (-webkit-device-pixel-ratio: 3) {
-  .content {
-    position:absolute;
-    display: flex;
-    z-index: 1;
-  }
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+      width: 100%;
+    }
 
-  #myVideo {
-    position:absolute;
-    display: flex;
-    top:0px;
-    left:0px;
-    width:600px;
-    height:1200px;
-    z-index: -1;
-    transform:translate(-50%,-40%);
-
-  }
-
-  #greycolored {
-    position:absolute;
-    display: flex;
-    width:120px;
-    height:220px;
-    z-index: 2;
-    transform:translate(-8%,0);
-  }
-
-  #movethefrog {
-
-  }
-
-  .square {
-    display:none;
-  }
-
-  #gardenButton {
-
-  }
-
-  #rainButton {
-
-  }
-
-  #inspireButton {
-
-  }
-
-  #gatewayButton {
 
 }
-}
-
-/* iPhone X in portrait & landscape */
-@media only screen and (min-device-width : 375px) and (max-device-width : 812px) and (-webkit-device-pixel-ratio : 3) {
-
-}
-
-/* iPad in portrait & landscape */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {}

@@ -4,37 +4,42 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script language="JavaScript" src="script.js"></script>
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"> </script>
   <link href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="style.css">
-  <title>Rainy-Myth</title>
-</head>
+  <script language="JavaScript" src="script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"> </script>
 
-<body>
+  <title>Rainy-Myth</title>
 
   <video autoplay muted loop id="myVideo">
     <source src="images\rain.mp4">
   </video>
+</head>
+
+<body>
+
+  <!-- <video autoplay muted loop id="myVideo">
+    <source src="images\rain.mp4">
+  </video> -->
 
   <!-- https://www.w3schools.com/howto/howto_css_image_text.asp -->
+  <div class="row">
   <div class="content">
-    <div>
+
+    <div class="col-6">
       <img id="greycolored" src="images/porchpicgrey.png"></img>
+      <div id="movethefrog">
+        <a href="frooj.html"><img id="movethefrog" src="images/frogboi.png"></a>
+      </div>
     </div>
 
-    <div id="movethefrog">
-      <a href="frooj.html"><img id="movethefrog" src="images/frogboi.png"></a>
-    </div>
-
-    <div class="square"></div>
-
+    <div class="col-5">
     <button id="rainButton" onclick="rainBackground()">Rain Style</button>
     <button id="gardenButton" onclick="gardenBackground()">Garden Style</button>
     <button id="inspireButton" onclick="inspireBackground()">Inspire Me</button>
     <button id="gatewayButton"><a href="inspired-homepage.html">Continue Forward?</a></button>
-
-  </div>
+</div>
+</div>
 
 </body>
 
