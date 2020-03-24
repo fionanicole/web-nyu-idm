@@ -10,7 +10,18 @@ body {
 
 
 *{
-  box-sizing: content-box;
+  box-sizing: border-box;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+[class*="col-"] {
+  float: left;
+  margin: 15px;
 }
 
 /* backgrounds */
@@ -108,22 +119,9 @@ body {
 .col-12 {width: 100%;}
 
 /* Sources for Media widths: https://gist.github.com/needim/d15fdc2ac133d8078f7c */
-/* Galaxy S5 portrait */
-@media screen and (min-device-width: 360px) and (max-device-width: 361px) and (min-device-height: 640px) and (max-device-height: 641px) and (-webkit-device-pixel-ratio: 3) {
-  [class*="col-"] {
-    width: 100%;
-  }
-}
+@media only screen and (max-width: 768px) {
 
-/* iPhone X in portrait & landscape */
-@media only screen and (min-device-width : 375px) and (max-device-width : 812px) and (-webkit-device-pixel-ratio : 3) {
-  [class*="col-"] {
-      width: 100%;
-    }
-}
-
-/* iPad in portrait & landscape */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+  /* For mobile phones: Galaxy S5, iPhone X, and iPhone 6/7/8 Portrait modes */
   [class*="col-"] {
     width: 100%;
   }
