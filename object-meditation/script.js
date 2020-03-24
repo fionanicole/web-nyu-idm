@@ -24,8 +24,6 @@ function inspireBackground() {
     x.src = "images/lavender.mp4";
   }
 
-  var y = document.getElementById("greycolored");
-  y.src = "images/porchpiccolor.png";
   var z = document.getElementById("inspireButton");
   z.innerHTML = "Inspire Again!";
   z.color = "pink";
@@ -44,13 +42,19 @@ function createGateway() {
   } else {
     x.style.display = "none";
   }
-  redirectGloriously();
 }
 
+// https://www.w3schools.com/jquery/html_remove.asp
+
 function redirectGloriously() {
+  var z = document.getElementById("gatewayButton");
+  z.innerHTML = "Just one More Click...";
+  z.color = "gold";
+  z.fontSize = "18px";
+  
   var timer = setTimeout(function() {
     window.location = 'inspired-homepage.html'
-  }, 5000);
+  }, 7000);
 
   var x = document.getElementById("myVideo");
   if (x.src = "images/rain.mp4") {
@@ -59,5 +63,11 @@ function redirectGloriously() {
     x.src = "images/rain.mp4";
   }
 
-  document.clear();
+    $(document).ready(function() {
+      $("button").click(function() {
+        $("div").remove();
+      });
+    });
+
+
 }
