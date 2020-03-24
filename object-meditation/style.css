@@ -11,10 +11,6 @@ body {
   box-sizing: border-box;
 }
 
-video{
-  z-index: -1;
-}
-
 /* container that is overlaid on top of the background vid */
 .content {
   display: block;
@@ -35,8 +31,9 @@ video{
 /* video container */
 #myVideo {
   position: fixed;
-  /* top:0;
-  left:0; */
+  z-index: -1;
+  top:0;
+  left:0;
 }
 
 /* set up of the grey person */
