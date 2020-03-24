@@ -16,6 +16,33 @@ function rainBackground() {
   }
 }
 
+function snowBackground(){
+  var x = document.getElementById("myVideo");
+  if (x.src = "images/lavender.mp4") {
+    x.src = "images/snow.mp4";
+  } else {
+    x.src = "images/lavender.mp4";
+  }
+}
+
+function nightBackground() {
+  var x = document.getElementById("myVideo");
+  if (x.src = "images/rain.mp4") {
+    x.src = "images/night.mp4";
+  } else {
+    x.src = "images/rain.mp4";
+  }
+}
+
+function forestBackground() {
+  var x = document.getElementById("myVideo");
+  if (x.src = "images/rain.mp4") {
+    x.src = "images/forest.mp4";
+  } else {
+    x.src = "images/rain.mp4";
+  }
+}
+
 function inspireBackground() {
   var x = document.getElementById("myVideo");
   if (x.src = "images/lavender.mp4") {
@@ -51,7 +78,7 @@ function redirectGloriously() {
   z.innerHTML = "Just one More Click...";
   z.color = "gold";
   z.fontSize = "18px";
-  
+
   var timer = setTimeout(function() {
     window.location = 'inspired-homepage.html'
   }, 7000);

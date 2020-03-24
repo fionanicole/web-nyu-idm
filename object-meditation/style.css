@@ -57,38 +57,80 @@ body {
 #gardenButton {
   float:left;
   float: top;
-  border-color: black;
-  border-radius: 8px;
+  border-color: rgba(0,0,0,0.5);
+  border-radius: 2px;
   font-family: 'Abril Fatface', cursive;
   font-size: 14px;
   width: 160px;
   height: 50px;
-  background-color: darkgreen;
-  background-image: image("images/grass.jpg");
-  color: lightgreen;
+  background-color: pink;
+  color: green;
   visibility: visible;
 }
 
 #rainButton {
   float:left;
   float: top;
-  border-color: black;
-  border-radius: 8px;
+  border-color: rgba(0,0,0,0.5);
+  border-radius: 2px;
   font-family: 'Abril Fatface', cursive;
   font-size: 14px;
   width: 160px;
   height: 50px;
   background-color: blue;
-  background-image: image("images/water.jpg");
   color: lightblue;
+  visibility: visible;
+}
+
+#snowButton {
+  float:left;
+  float: top;
+  border-color: rgba(0,0,0,0.5);
+  border-radius: 2px;
+  font-family: 'Abril Fatface', cursive;
+  font-size: 14px;
+  width: 160px;
+  height: 50px;
+  background-color: white;
+  color: darkgrey;
+  text-shadow: black 0.5px 0.5px;
+  visibility: visible;
+}
+
+#forestButton {
+  float:left;
+  float: top;
+  border-color: rgba(0,0,0,0.5);
+  border-radius: 2px;
+  font-family: 'Abril Fatface', cursive;
+  font-size: 14px;
+  width: 160px;
+  height: 50px;
+  background-color: darkgreen;
+  color: lightgreen;
+  visibility: visible;
+}
+
+#nightButton {
+  float:left;
+  float: top;
+  border-color: rgba(0,0,0,0.5);
+  border-radius: 2px;
+  font-family: 'Abril Fatface', cursive;
+  font-size: 14px;
+  width: 160px;
+  height: 50px;
+  background-color: black;
+  background-image: image("images/water.jpg");
+  color: lavender;
   visibility: visible;
 }
 
 #inspireButton {
   float:left;
   float: top;
-  border-color: black;
-  border-radius: 8px;
+  border-color: rgba(0,0,0,0.5);
+  border-radius: 2px;
   font-family: 'Abril Fatface', cursive;
   font-size: 14px;
   width: 160px;
@@ -102,16 +144,17 @@ body {
 #gatewayButton {
   float:left;
   float: top;
-  border-color: black;
-  border-radius: 8px;
+  border-color: rgba(0,0,0,0.5);
+  border-radius: 2px;
   font-family: 'Abril Fatface', cursive;
   font-size: 14px;
   display: none;
   width: 160px;
   height: 50px;
-  background-color: lavender;
+  background-color: gold;
   background-image: image("images/puff.jpg");
-  color: purple;
+  color: darkorange;
+  text-shadow: black 0.5px 0.5px;
 }
 
 /* Source:https://www.w3schools.com/css/css_rwd_mediaqueries.asp */
