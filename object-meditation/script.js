@@ -5,6 +5,10 @@ function gardenBackground() {
   } else {
     x.src = "images/rain.mp4";
   }
+
+  var explore = document.getElementById("explore");
+  explore.style.color="pink"
+
 }
 
 function rainBackground() {
@@ -14,6 +18,9 @@ function rainBackground() {
   } else {
     x.src = "images/lavender.mp4";
   }
+
+  var explore = document.getElementById("explore");
+  explore.style.color="lightblue"
 }
 
 function snowBackground(){
@@ -23,6 +30,9 @@ function snowBackground(){
   } else {
     x.src = "images/lavender.mp4";
   }
+
+  var explore = document.getElementById("explore");
+  explore.style.color="white"
 }
 
 function nightBackground() {
@@ -32,6 +42,9 @@ function nightBackground() {
   } else {
     x.src = "images/rain.mp4";
   }
+
+  var explore = document.getElementById("explore");
+  explore.style.color="red"
 }
 
 function forestBackground() {
@@ -41,6 +54,9 @@ function forestBackground() {
   } else {
     x.src = "images/rain.mp4";
   }
+
+  var explore = document.getElementById("explore");
+  explore.style.color="gold"
 }
 
 function inspireBackground() {
@@ -50,6 +66,9 @@ function inspireBackground() {
   } else {
     x.src = "images/lavender.mp4";
   }
+
+  var explore = document.getElementById("explore");
+  explore.style.color="magenta"
 
   var z = document.getElementById("inspireButton");
   z.innerHTML = "Inspire Again!";
@@ -78,6 +97,9 @@ function redirectGloriously() {
   z.innerHTML = "Just one More Click...";
   z.color = "gold";
   z.fontSize = "18px";
+
+  var explore = document.getElementById("explore");
+  explore.style.color="orange"
 
   var timer = setTimeout(function() {
     window.location = 'inspired-homepage.html'

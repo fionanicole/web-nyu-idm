@@ -45,6 +45,14 @@ body {
 
 }
 
+#explore{
+  font-size: 45px;
+  text-align: center;
+  color:lightblue;
+  font-family: 'Abril Fatface', cursive;
+  transform: translate(-2%,-19%);
+}
+
 /* positioning of the frog link */
 #movethefrog {
   display:flex;
@@ -181,6 +189,10 @@ body {
   z-index: 2;
   height: 35px;
   width: 35px;
+}
+
+#explore{
+  font-size: 14px;
 }
 
 }
