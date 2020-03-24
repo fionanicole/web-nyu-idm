@@ -34,17 +34,6 @@ function inspireBackground() {
   createGateway();
 }
 
-// function colorize() {
-//   var x = document.getElementById("greycolored");
-//   x.src = "images/porchpiccolor.png";
-//   var y= document.getElementById("inspireButton");
-//   y.innerHTML="Inspire Again!";
-//   y.color="pink";
-//   y.fontSize="18px";
-//
-//   createGateway();
-// }
-
 // https://www.w3schools.com/howto/howto_js_toggle_hide_show.asp
 function createGateway() {
   var x = document.getElementById("gatewayButton");
