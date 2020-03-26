@@ -25,6 +25,12 @@ getNameLength(){
  console.log(length);
 }
 
+lessThanFour(){
+  if (namesArray<4){
+    console.log
+  }
+}
+
 // console.log(n);
 console.log(randomName);
 let arrayAsString = namesArray.join(', ');
