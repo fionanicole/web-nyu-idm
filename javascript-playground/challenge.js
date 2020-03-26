@@ -41,7 +41,9 @@ let colors = ['red','blue','green','yellow','purple'];
 // 5.  Console.log each item in the array
 // push your edits to github!!
 
-console.log(colors);
+for(i=0;i<color.length;i++){
+  console.log(colors[i]);
+}
 
 // 6. Declare an empty string variable called 'text'. Each time you console.log a color from the above challenge number 2, add your color to this variable.
 // push your edits to github!!
@@ -52,14 +54,20 @@ let combineText = colors.join(textChallenge);
 console.log(colors);
 console.log(combineText);
 
+for (i=0;i<colors.length;i++){
+  textChallenge+= "<br></br>" + color + "<br></br>";
+}
+
 
 // 7. Create a div in the index.html with a unique id called whatever you want. Display the contents of your text variable to this div. Now you should have a list of 5 colors visible on your website.
 // push your edits to github!!
 
-for (i=0; i< colors.length; i++){
-  textChallenge += colors[i] + "  " + i + "<br>";
-}
+// for (i=0; i< colors.length; i++){
+//   textChallenge += colors[i] + "  " + i + "<br>";
+// }
 
-$("#listColors").html(text);
+console.log(textChallenge);
+
+$("#listColors").html(textChallenge);
 // $('#color').html(colors);
 $('#colors').html(combineText);
