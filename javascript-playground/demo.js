@@ -15,9 +15,16 @@ function getRandom(max) {
 // console.log(getRandom(1));
 // console.log(getRandom(3));
 // Expected output is 0, 1, or 2 (not 3)
+
+var length= (namesArray.length);
 let n = getRandom(namesArray.length)
 let randomName = namesArray[n];
-console.log(namesArray.length);
+
+// question 2
+getNameLength(){
+ console.log(length);
+}
+
 // console.log(n);
 console.log(randomName);
 let arrayAsString = namesArray.join(', ');
