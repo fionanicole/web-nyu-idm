@@ -1,6 +1,6 @@
 // Welcome to the in-class challenge!
 
-// Copied from the doc
+// Copied from the doc on 3/26
 
 let myAlphabet = ['A', 'B', 'C', 'D','E','F','G'];
 

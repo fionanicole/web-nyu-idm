@@ -35,7 +35,23 @@ let arrayAsString = namesArray.join(', ');
 console.log(namesArray);
 console.log(arrayAsString);
 
+let sortedNames = namesArray.sort();
+console.log(sortedNames);
 
 
+let text = "";
+
+// if find yourself doing this, make an itterative loop
+// text += namesArray[0]; + "<br>";
+// text += namesArray[1]; + "<br>";
+// text += namesArray[2]; + "<br>";
+// text += namesArray[3]; + "<br>";
+// text += namesArray[4]; + "<br>";
+
+for (i=0; i< namesArray.length; i++){
+  text += namesArray[i] +"  yea  "+ i + "<br>";
+}
+
+$("#listNames").html(text);
 $('#name').html(namesArray[n]);
 $('#names').html(arrayAsString);
